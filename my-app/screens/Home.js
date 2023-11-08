@@ -5,9 +5,20 @@ export default function Home({ navigation }) {
 
     return (
         <SafeAreaView style={styles.container}>
-            <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
-                <Text style={styles.texto}>Ve tus contactos</Text>
-            </TouchableOpacity>
+            <View style={styles.centrar}>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                    <Text style={styles.texto}>Ver tus contactos</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                    <Text style={styles.texto}>Vibración</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                    <Text style={styles.texto}>Abrir camara</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                    <Text style={styles.texto}>No se</Text>
+                </TouchableOpacity>
+            </View>
         </SafeAreaView>
     );
 }
@@ -21,16 +32,27 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     boton: {
-        display: 'flex',
-        alignContent: 'center',
-        justifyContent: 'center',
         borderRadius: 15,
-        borderColor: '#58CBC0'
+        borderColor: '#58CBC0',
+        backgroundColor: '#58CBC0',
+        minHeight: '40px',
+        minWidth: '200px',
+        maxWidth: '200px',
+        margin: '20px',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     texto: {
-        color: '#58CBC0',
+        flex: 1,
+        color: 'white',
         display: 'flex',
         alignContent: 'center',
         justifyContent: 'center'
+    },
+    centrar: {
+        flex: 1,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
     }
 });
