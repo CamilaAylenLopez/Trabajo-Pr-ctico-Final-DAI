@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/Home';
 import Contactos from '../screens/Contactos';
 import Camara from '../screens/Camara'
+import VibracionScreen from '../screens/Vibracion';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ const AppNavigator = () => {
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Contactos" component={Contactos} />
                 <Stack.Screen name="Camara" component={Camara} />
+                <Stack.Screen name="Vibracion" component={VibracionScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
