@@ -9,14 +9,14 @@ export default function Home({ navigation }) {
                 <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
                     <Text style={styles.texto}>Ver tus contactos</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Vibracion")}>
                     <Text style={styles.texto}>Vibración</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Camara")}>
                     <Text style={styles.texto}>Abrir camara</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
-                    <Text style={styles.texto}>No se</Text>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("SMS")}>
+                    <Text style={styles.texto}>Mensaje SMS</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     texto: {
-        flex: 1,
+        display: 'flex',
         color: 'white',
         display: 'flex',
         alignContent: 'center',

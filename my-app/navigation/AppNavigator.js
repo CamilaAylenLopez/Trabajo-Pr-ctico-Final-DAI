@@ -5,6 +5,7 @@ import Home from '../screens/Home';
 import Contactos from '../screens/Contactos';
 import Camara from '../screens/Camara'
 import VibracionScreen from '../screens/Vibracion';
+import SMS from '../screens/SMS';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ const AppNavigator = () => {
                 <Stack.Screen name="Contactos" component={Contactos} />
                 <Stack.Screen name="Camara" component={Camara} />
                 <Stack.Screen name="Vibracion" component={VibracionScreen} />
+                <Stack.Screen name="SMS" component={SMS} />
             </Stack.Navigator>
         </NavigationContainer>
     );
