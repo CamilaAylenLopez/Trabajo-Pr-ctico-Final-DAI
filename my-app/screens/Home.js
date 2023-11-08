@@ -9,7 +9,7 @@ export default function Home({ navigation }) {
                 <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
                     <Text style={styles.texto}>Ver tus contactos</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
+                <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Vibracion")}>
                     <Text style={styles.texto}>Vibración</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.boton} onPress={() => navigation.navigate("Contactos")}>
