@@ -7,7 +7,7 @@ export default function VibracionScreen() {
     return (
         <>
             <Button
-                title="Vibrate for 10 seconds"
+                title="Vibrate"
                 onPress={() => Vibration.vibrate(10 * ONE_SECOND_IN_MS)}
             />
         </>
