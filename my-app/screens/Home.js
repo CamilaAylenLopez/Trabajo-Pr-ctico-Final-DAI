@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView, Text, View, SafeAreaView, TouchableOpacity, FlatList } from "react-native";
+import { StyleSheet, ScrollView, Text, View, SafeAreaView, TouchableOpacity, ImageBackground } from "react-native";
 import React, { useState, useEffect } from "react";
 
 export default function Home({ navigation }) {

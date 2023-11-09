@@ -6,9 +6,9 @@ export default function VibracionScreen() {
 
     return (
         <View style={styles.container}>
-        <TouchableOpacity onPress={() => Vibration.vibrate(10 * ONE_SECOND_IN_MS)} style={styles.boton}>
-            <Text style={styles.texto}>Vibrar</Text>
-        </TouchableOpacity>
+            <TouchableOpacity onPress={() => Vibration.vibrate(10 * ONE_SECOND_IN_MS)} style={styles.boton}>
+                <Text style={styles.texto}>Vibrar</Text>
+            </TouchableOpacity>
         </View>
     );
 }
