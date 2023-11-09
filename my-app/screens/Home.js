@@ -35,10 +35,9 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         borderColor: '#58CBC0',
         backgroundColor: '#58CBC0',
-        minHeight: '40px',
-        minWidth: '200px',
-        maxWidth: '200px',
-        margin: '20px',
+        minHeight: 50,
+        minWidth: 200,
+        margin: 10,
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -47,7 +46,8 @@ const styles = StyleSheet.create({
         color: 'white',
         display: 'flex',
         alignContent: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        fontSize: 18,
     },
     centrar: {
         flex: 1,
