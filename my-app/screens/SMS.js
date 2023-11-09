@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView, Text, View, SafeAreaView, TouchableOpacity, FlatList } from "react-native";
+import { StyleSheet, ScrollView, Text, View, TextInput, TouchableOpacity, Button } from "react-native";
 import React, { useState, useEffect } from "react";
 import * as SMS from 'expo-sms';
 import * as Print from 'expo-print';
@@ -90,8 +90,6 @@ export default function Home({ navigation }) {
         ) : (
             <Text style={styles.smsNotAvailable}>SMS no disponible</Text>
         )}
-
-        <StatusBar style="auto" />
     </View>
     );
 }
